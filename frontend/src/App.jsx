@@ -33,7 +33,7 @@ function App() {
         setParsedData(jsonData);
         setIsValid(true);
         console.log(parsedData);
-        axios.post("http://localhost:8000/bfhl",parsedData)
+        axios.post("https://bajaj-challenge-psi.vercel.app/bfhl",parsedData)
         .then((res)=>{
           setRes(res.data);
         })
